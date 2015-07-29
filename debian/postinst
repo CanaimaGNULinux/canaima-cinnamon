@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if which pycompile >/dev/null 2>&1; then
+	pycompile -p cinnamon /usr/lib/cinnamon
+fi
+
+if [ "$1" = "configure" ]; then
+	update-alternatives --install /usr/bin/x-window-manager \
+		x-window-manager /usr/bin/cinnamon-session-cinnamon 20
+fi
+if [ "$1" = "configure" ]; then
+	update-alternatives --install /usr/bin/x-window-manager \
+		x-window-manager /usr/bin/cinnamon-session-cinnamon2d 20
+fi
+
+#DEBHELPER#
+exit 0

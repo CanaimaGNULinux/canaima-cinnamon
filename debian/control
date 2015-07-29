@@ -1,0 +1,15 @@
+Source: canaima-cinnamon
+Section: metapackages
+Priority: standard
+Maintainer: Jeidi Brito <jeidi.brito@gmail.com>
+Build-Depends: debhelper, cdbs
+Standards-Version: 3.9.5
+
+Package: canaima-cinnamon
+Architecture: all
+Pre-Depends: multiarch-support
+Depends: cinnamon-common, cinnamon-control-center, cinnamon-desktop-data, cinnamon-screensaver, cinnamon-session, cinnamon-settings-daemon, cjs, cups-pk-helper, gir1.2-accountsservice-1.0, gir1.2-clutter-1.0, gir1.2-cogl-1.0, gir1.2-gconf-2.0, gir1.2-gdkpixbuf-2.0, gir1.2-gkbd-3.0, gir1.2-glib-2.0, gir1.2-cmenu-3.0, gir1.2-nmgtk-1.0, gir1.2-gnomebluetooth-1.0, gir1.2-gnomedesktop-3.0, gir1.2-gtk-3.0, gir1.2-gtkclutter-1.0, gir1.2-javascriptcoregtk-3.0, gir1.2-networkmanager-1.0, gir1.2-pango-1.0, gir1.2-polkit-1.0, gir1.2-soup-2.4, gir1.2-upowerglib-1.0, gir1.2-webkit-3.0, gkbd-capplet, gnome-icon-theme-symbolic, gnome-session-bin, gnome-settings-daemon, gnome-themes-standard, gsettings-desktop-schemas, libjs-jquery, nemo, network-manager-gnome, policykit-1-gnome, python-dbus, python-gconf, python-gi-cairo, python-imaging, python-lxml, python-pam, python-pexpect, python-pyinotify, gir1.2-meta-muffin-0.0, gsettings-backend, python:any, libatk1.0-0, libc6, libcairo2, libcanberra0, libcinnamon-menu-3-0, libcjs0, libclutter-1.0-0 , libcogl-pango20, libcogl-path20, libcogl20, libcroco3, libdbus-glib-1-2, libgdk-pixbuf2.0-0, libgirepository-1.0-1, libgl1-mesa-glx | libgl1, libglib2.0-0, libgstreamer1.0-0, libgtk-3-0, libmozjs185-1.0, libmuffin0, libpango-1.0-0, libpangocairo-1.0-0, libpulse-mainloop-glib0, libpulse0, libstartup-notification0, libx11-6, libxfixes3, libxml2, cinnamon-l10n, gnome-terminal, x-terminal-emulator, canaima-desktop-base
+Breaks: cinnamon-common (<= 2.2.14-1)
+Replaces: cinnamon-common (<= 2.2.14-1)
+Description: Canaima Cinnamon
+ Escritorio cinnamon para Canaima

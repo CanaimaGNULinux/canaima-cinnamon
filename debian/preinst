@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ "$1" = "remove" ]; then
+	update-alternatives --remove x-window-manager /usr/bin/cinnamon-session-cinnamon2d
+fi
+
+if [ "$1" = "remove" ]; then
+	update-alternatives --remove x-window-manager /usr/bin/cinnamon-session-cinnamon
+fi
+
+if which pyclean >/dev/null 2>&1; then
+	pyclean -p cinnamon 
+else
+	dpkg -L cinnamon | grep \.py$ | while read file
+	do
+		rm -f "${file}"[co] >/dev/null
+  	done
+fi
+
+#DEBHELPER#
+exit 0

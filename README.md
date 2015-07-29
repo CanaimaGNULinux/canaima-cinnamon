@@ -1,2 +1,4 @@
 # canaima-cinnamon
-escritorio cinnamon para canaima
+Escritorio cinnamon para Canaima
+
+Empaquetado por Jeidi Brito <jeidi.brito@gmail.com>
